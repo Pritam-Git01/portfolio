@@ -31,7 +31,7 @@ export function StructuredData() {
       "Node.js",
       "Express.js",
       "Python",
-      "Django",
+      "FastAPI",
       "Full Stack Development",
       "Frontend Engineering",
       "Backend Engineering",
@@ -45,6 +45,8 @@ export function StructuredData() {
       "Docker",
       "Kubernetes",
       "CI/CD",
+      "Kafka",
+      "RabbitMQ",
       "Microservices Architecture",
       "RESTful APIs",
       "GraphQL",
@@ -74,17 +76,17 @@ export function StructuredData() {
     },
     "alumniOf": {
       "@type": "EducationalOrganization",
-      "name": "Master's in Computer Science"
+      "name": "Bachelor's in Computer Science"
     },
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "degree",
-        "name": "Master's Degree in Computer Science"
+        "name": "Bachelor's Degree in Computer Science"
       }
     ],
     "award": [
-      "2.8+ Years of Professional Experience",
+      "2.9+ Years of Professional Experience",
       "50+ Projects Completed",
       "10+ Technical Certifications"
     ],

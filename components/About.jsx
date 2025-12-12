@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ProfileCard from './ProfileCard';
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -57,7 +58,7 @@ const About = () => {
         
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Image Section */}
-          <motion.div 
+          {/* <motion.div 
             className="lg:w-2/5"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,11 +67,11 @@ const About = () => {
           >
             <div className="relative w-full max-w-md mx-auto lg:mx-0">
               <div className="aspect-[4/5] bg-linear-to-tr from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-600 rounded-lg overflow-hidden shadow-xl">
-                {/* Professional Image */}
+               
                 <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700">
                   <span className="text-gray-500 dark:text-gray-400">Professional Image</span>
                 </div>
-                {/* When you have an actual image, use:
+                
                 <Image
                   src="/images/pritam-kumar-yadav-professional.jpg"
                   alt="Pritam Kumar Yadav - Professional Software Engineer portrait in Bengaluru"
@@ -78,14 +79,38 @@ const About = () => {
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"
                 />
-                */}
+               
               </div>
               <div className="absolute -bottom-6 sm:-right-6 -right-4 p-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
                 <p className="font-medium text-blue-500">2.8+ Years Experience</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">In Software Engineering</p>
               </div>
             </div>
+          </motion.div> */}
+
+          <motion.div 
+            className="lg:w-2/5 flex justify-center"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.8 }}
+          >
+<ProfileCard
+  name="Pritam K. Yadav"
+  title="Full Stack Engineer"
+  handle="pritam-git01"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="/images/profile.png"
+  showUserInfo={true}
+  enableTilt={true}
+  className='w-full'
+  enableMobileTilt={false}
+  onContactClick={() => console.log('Contact clicked')}
+/>
           </motion.div>
+
+          
           
           {/* Content Section */}
           <div className="lg:w-3/5">
