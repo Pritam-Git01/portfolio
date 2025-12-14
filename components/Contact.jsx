@@ -69,7 +69,7 @@ const Contact = () => {
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg shadow-md">
+            <div className="bg-gray-50 dark:bg-gray-700 sm:p-8 p-4 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               
               <div className="space-y-6">
@@ -127,7 +127,7 @@ const Contact = () => {
             viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg shadow-md">
+            <div className="bg-gray-50 dark:bg-gray-700 sm:p-8 p-4 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
               
               {formStatus.submitted ? (

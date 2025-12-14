@@ -89,7 +89,7 @@ const About = () => {
           </motion.div> */}
 
           <motion.div 
-            className="lg:w-2/5 flex justify-center"
+            className="lg:w-2/5 flex items-start justify-center"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
@@ -117,7 +117,7 @@ const About = () => {
             <div ref={textRef} className="space-y-6">
               {/* Subheading with keywords */}
               <motion.h3 
-                className="text-2xl font-bold text-gray-800 dark:text-gray-200"
+                className="sm:text-2xl text-xl font-bold text-gray-800 dark:text-gray-200"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: false }}
@@ -128,7 +128,7 @@ const About = () => {
               
               {/* Introduction paragraph with location and keywords */}
               <motion.div 
-                className="text-gray-600 dark:text-gray-400 space-y-4"
+                className="sm:text-base text-sm text-gray-600 dark:text-gray-400 space-y-4"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: false }}

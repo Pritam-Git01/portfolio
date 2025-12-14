@@ -120,7 +120,7 @@ const Projects = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <a 
-            href="https://github.com/pritam-yadav" 
+            href="https://github.com/pritam-git01" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center gap-2 font-medium text-blue-500 hover:text-blue-600 transition-colors"
