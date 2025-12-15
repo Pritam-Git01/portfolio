@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import SocialLinks from "./SocialLinks";
+import { HandHeart } from "lucide-react";
+import { PiHeartFill } from "react-icons/pi";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -52,7 +54,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6 text-white">Services</h4>
             <ul className="space-y-3">
               {[
-                "Web Development",
+                "SaaS and AI Application Development",
                 "Mobile App Development",
                 "UI/UX Design",
                 "API Development",
@@ -148,9 +150,8 @@ const Footer = () => {
           <p className="text-gray-500">
             &copy; {currentYear} Pritam Kumar Yadav. All rights reserved.
           </p>
-          <p className="text-gray-600 text-sm mt-2">
-            Designed and built with <span className="text-red-500">♥</span>{" "}
-            using React, Tailwind CSS, Framer Motion, and GSAP
+          <p className="text-gray-600 flex items-center justify-center text-sm mt-2">
+            Designed and built with <PiHeartFill className="text-red-500 size-4 mx-2"/> Pritam
           </p>
         </motion.div>
       </div>

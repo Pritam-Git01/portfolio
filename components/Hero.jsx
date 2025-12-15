@@ -1,12 +1,14 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { FaReact, FaPython, FaDocker, FaNodeJs } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
+import ScheduleCall from './modal/ScheduleCall';
 
 const Hero = () => {
   const heroRef = useRef(null);
   const textRef = useRef(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -93,15 +95,15 @@ const Hero = () => {
               >
                 View My Work
               </motion.a>
-              <motion.a
-                href="#contact"
-                className="border-2 border-blue-500 text-blue-500 font-medium px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white transition-all text-sm sm:text-base"
+              <motion.button
+                onClick={() => setIsDialogOpen(true)}
+                className="border-2 border-blue-500 text-blue-500 font-medium px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white transition-all text-sm sm:text-base cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                aria-label="Contact for opportunities"
+                aria-label="let's have a talk"
               >
-                Hire Me
-              </motion.a>
+               Let's meet
+              </motion.button>
             </div>
 
             {/* Tech Stack Badges */}
@@ -237,6 +239,12 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+
+      <ScheduleCall
+        isOpen={isDialogOpen}
+        setIsOpen={setIsDialogOpen}
+        duration='30min'
+      />
     </section>
   );
 };

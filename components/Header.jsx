@@ -124,7 +124,7 @@ const Header = () => {
               </motion.li>
             ))}
           </ul>
-          <SocialLinks className="flex space-x-4" />
+          
 
           {/* Dark Mode Toggle */}
           <motion.button
@@ -200,7 +200,7 @@ const Header = () => {
           variants={menuVariants}
           initial="closed"
           animate={isMenuOpen ? "open" : "closed"}
-          className="md:hidden bg-white dark:bg-gray-800 shadow-lg"
+          className="lg:hidden bg-white dark:bg-gray-800 shadow-lg"
         >
           <div className="container mx-auto px-6 py-4">
             <ul className="space-y-4">
