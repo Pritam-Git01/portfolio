@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { FaReact, FaPython, FaDocker, FaNodeJs } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
 import ScheduleCall from './modal/ScheduleCall';
+import TypeWriter from './TypeWriter';
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -52,9 +53,9 @@ const Hero = () => {
             {/* Main Heading - H1 with primary keywords */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="block mb-2">Hi, I'm</span>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-600">
-                Pritam Kumar Yadav
-              </span>
+             
+                <TypeWriter/>
+              
             </h1>
 
             {/* Role description with keywords */}

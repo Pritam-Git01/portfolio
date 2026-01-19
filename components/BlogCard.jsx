@@ -56,7 +56,8 @@ const BlogCard = ({ blog, index }) => {
         <h3 className="text-xl font-bold mb-2 line-clamp-2">{blog.title}</h3>
         <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">{blog.excerpt}</p>
         <a 
-          href={blog.url} 
+          href={blog.url}
+          target='_blank'
           className="inline-flex items-center text-blue-500 hover:text-blue-600 transition-colors"
         >
           Read More
