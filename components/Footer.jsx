@@ -22,7 +22,7 @@ const Footer = () => {
           viewport={{ once: false }}
         >
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            <h3 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500">
               Pritam.dev
             </h3>
             <p className="text-gray-400 mb-6">
@@ -56,7 +56,6 @@ const Footer = () => {
               {[
                 "SaaS and AI Application Development",
                 "Mobile App Development",
-                "UI/UX Design",
                 "API Development",
                 "Code Review",
                 "Consulting",

@@ -13,16 +13,16 @@ import Footer from '@/components/Footer';
 import {ThemeProvider} from '@/providers/ThemeProvider';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    // Simulate loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+  // useEffect(() => {
+  //   // Simulate loading time
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
     
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const loadingVariants = {
     hidden: { opacity: 0 },

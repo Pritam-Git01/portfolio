@@ -44,7 +44,7 @@ const ProjectCard = ({ project, index }) => {
   const imageVariants = {
     rest: { scale: 1, filter: 'brightness(0.95)' },
     hover: { 
-      scale: 1.08, 
+      scale: 1.05, 
       filter: 'brightness(1.05)',
       transition: { duration: 0.4, ease: "easeOut" } 
     }

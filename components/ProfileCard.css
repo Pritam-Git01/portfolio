@@ -60,7 +60,7 @@
   max-height: 680px;
   width: auto;
   max-width: 100%;
-  margin: 0 auto;
+
   display: grid;
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);
@@ -73,6 +73,12 @@
   background: rgba(0, 0, 0, 0.9);
   backface-visibility: hidden;
   overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .pc-card {
+  margin: 0 auto;
+  }
 }
 
 .pc-card:hover,

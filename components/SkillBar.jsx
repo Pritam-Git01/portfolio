@@ -74,7 +74,6 @@ const SkillBar = ({ skill }) => {
       initial="hidden"
       animate={controls}
       whileHover={{ 
-        y: -3, 
         transition: { duration: 0.2 }
       }}
     >

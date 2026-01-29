@@ -1,46 +1,25 @@
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProfileCard from "./ProfileCard";
-gsap.registerPlugin(ScrollTrigger);
+import { useMemo } from "react";
 
 const About = () => {
-  const sectionRef = useRef(null);
-  const textRef = useRef(null);
-  const statsRef = useRef(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: section,
-        start: "top 100%",
-        end: "bottom 20%",
-        toggleActions: "play none none none",
-      },
-    });
-
-    return () => {
-      if (tl.scrollTrigger) {
-        tl.scrollTrigger.kill();
-      }
-      tl.kill();
-    };
+  const experienceText = useMemo(() => {
+    const [y, m] = "2.9".split(".").map(Number);
+    const nextYear = y + Math.floor((m + 1) / 12);
+    const nextMonth = (m + 1) % 12;
+    return `${nextYear}.${nextMonth}`;
   }, []);
 
   return (
     <section
       id="about"
-      ref={sectionRef}
       className="py-20 bg-white dark:bg-gray-800"
       aria-labelledby="about-heading"
     >
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.8 }}
@@ -63,40 +42,9 @@ const About = () => {
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Image Section */}
-          {/* <motion.div 
-            className="lg:w-2/5"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="relative w-full max-w-md mx-auto lg:mx-0">
-              <div className="aspect-[4/5] bg-linear-to-tr from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-600 rounded-lg overflow-hidden shadow-xl">
-               
-                <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700">
-                  <span className="text-gray-500 dark:text-gray-400">Professional Image</span>
-                </div>
-                
-                <Image
-                  src="/images/pritam-kumar-yadav-professional.jpg"
-                  alt="Pritam Kumar Yadav - Professional Software Engineer portrait in Bengaluru"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                />
-               
-              </div>
-              <div className="absolute -bottom-6 sm:-right-6 -right-4 p-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
-                <p className="font-medium text-blue-500">2.8+ Years Experience</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">In Software Engineering</p>
-              </div>
-            </div>
-          </motion.div> */}
-
           <motion.div
             className="lg:w-2/5 flex items-start justify-center"
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
@@ -118,11 +66,12 @@ const About = () => {
 
           {/* Content Section */}
           <div className="lg:w-3/5">
-            <div ref={textRef} className="space-y-6">
+            <div className="space-y-6">
               {/* Subheading with keywords */}
               <motion.h3
                 className="sm:text-2xl text-xl font-bold text-gray-800 dark:text-gray-200"
                 initial={{ opacity: 0 }}
+                style={{ transformOrigin: "top" }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.8 }}
@@ -135,9 +84,10 @@ const About = () => {
               <motion.div
                 className="sm:text-base text-sm text-gray-600 dark:text-gray-400 space-y-4"
                 initial={{ opacity: 0 }}
+                style={{ transformOrigin: "top" }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: false }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
               >
                 <p>
                   I'm <strong>Pritam Kumar Yadav</strong>, a passionate{" "}
@@ -260,8 +210,11 @@ const About = () => {
             </div>
 
             {/* Statistics Cards */}
-            <div
-              ref={statsRef}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.8 }}
               className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10"
             >
               <motion.article
@@ -270,7 +223,7 @@ const About = () => {
                 aria-label="Years of experience"
               >
                 <h4 className="text-xl md:text-3xl font-bold text-blue-500">
-                  2.8+
+                  {experienceText}+
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400 mt-1">
                   Years of Experience
@@ -311,7 +264,7 @@ const About = () => {
                   Cloud & Software Architecture
                 </p>
               </motion.article>
-            </div>
+            </motion.div>
 
             {/* Hidden keywords for SEO */}
             <div className="sr-only">

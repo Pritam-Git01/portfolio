@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SocialLinks from "./SocialLinks";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/providers/ThemeProvider";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -91,15 +92,13 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <motion.div
           className="text-2xl font-bold tracking-tighter"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
         >
-          <a
-            href="#home"
+          <Link
+            href="/"
             className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-600"
           >
             Pritam.dev
-          </a>
+          </Link>
         </motion.div>
 
         {/* Desktop Menu */}
