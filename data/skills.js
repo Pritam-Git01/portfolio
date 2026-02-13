@@ -5,21 +5,21 @@ export const skills = [
     id: 1,
     name: "JavaScript",
     level: 95,
-    years: 5,
+    years: 3,
     category: "frontend"
   },
   {
     id: 2,
     name: "React.js",
     level: 90,
-    years: 4,
+    years: 3,
     category: "frontend"
   },
   {
     id: 3,
     name: "HTML5 & CSS3",
     level: 90,
-    years: 6,
+    years: 3,
     category: "frontend"
   },
   {
@@ -39,8 +39,8 @@ export const skills = [
   {
     id: 6,
     name: "Tailwind CSS",
-    level: 80,
-    years: 2,
+    level: 96,
+    years: 3,
     category: "frontend"
   },
   
@@ -49,41 +49,27 @@ export const skills = [
     id: 7,
     name: "Node.js",
     level: 90,
-    years: 4,
+    years: 3,
     category: "backend"
   },
   {
     id: 8,
     name: "Express.js",
-    level: 85,
-    years: 4,
+    level: 90,
+    years: 3,
     category: "backend"
   },
   {
     id: 9,
     name: "Python",
     level: 85,
-    years: 4,
+    years: 2,
     category: "backend"
   },
-  {
+    {
     id: 10,
-    name: "Django",
-    level: 75,
-    years: 3,
-    category: "backend"
-  },
-  {
-    id: 11,
-    name: "Java",
-    level: 70,
-    years: 3,
-    category: "backend"
-  },
-  {
-    id: 12,
-    name: "Spring Boot",
-    level: 65,
+    name: "FastAPI",
+    level: 85,
     years: 2,
     category: "backend"
   },
@@ -93,27 +79,27 @@ export const skills = [
     id: 13,
     name: "MongoDB",
     level: 90,
-    years: 4,
+    years: 3,
     category: "database"
   },
   {
     id: 14,
     name: "PostgreSQL",
     level: 85,
-    years: 3,
+    years: 1,
     category: "database"
   },
   {
     id: 15,
     name: "MySQL",
     level: 80,
-    years: 4,
+    years: 1,
     category: "database"
   },
   {
     id: 16,
     name: "Redis",
-    level: 75,
+    level: 90,
     years: 2,
     category: "database"
   },
@@ -122,7 +108,7 @@ export const skills = [
   {
     id: 17,
     name: "Docker",
-    level: 80,
+    level: 90,
     years: 3,
     category: "devops"
   },
@@ -153,21 +139,21 @@ export const skills = [
     id: 21,
     name: "Git & GitHub",
     level: 95,
-    years: 5,
+    years: 3,
     category: "tools"
   },
   {
     id: 22,
     name: "VS Code",
     level: 90,
-    years: 5,
+    years: 3,
     category: "tools"
   },
   {
     id: 23,
     name: "Jira",
-    level: 85,
-    years: 4,
+    level: 95,
+    years: 3,
     category: "tools"
   },
   {

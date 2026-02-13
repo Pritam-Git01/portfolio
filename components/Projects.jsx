@@ -1,7 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
 
@@ -9,11 +7,11 @@ import { projects } from '../data/projects';
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   
-  const categories = ['All', 'Web', 'Mobile', 'Backend', 'AI/ML'];
+  const categories = ['All', 'Frontend', 'Full Stack', 'AI/ML'];
   
   const filteredProjects = activeCategory === 'All' 
     ? projects 
-    : projects.filter(project => project.category === activeCategory);
+    : projects.filter(project => project.category === activeCategory.toLowerCase());
 
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">

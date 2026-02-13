@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo} from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { FaReact, FaPython, FaDocker, FaNodeJs } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Hero = () => {
   }, []);
 
   const experienceText = useMemo(() => {
-    const [y, m] = "2.9".split(".").map(Number);
+    const [y, m] = "2.10".split(".").map(Number);
     const nextYear = y + Math.floor((m + 1) / 12);
     const nextMonth = (m + 1) % 12;
     return `${nextYear}.${nextMonth}`;
@@ -143,7 +143,7 @@ const Hero = () => {
                   {
                     name: "React",
                     color: "text-[#61DAFB]",
-                    bg: "group-hover:bg-[#61DAFB]/10 group-hover:border-[#61DAFB]/50 group-hover:shadow-[0_0_20px_rgba(97,218,251,0.3)]",
+                    bg: "group-hover:bg-[#61DAFB]/20 group-hover:border-[#61DAFB]/50 group-hover:shadow-[0_0_20px_rgba(97,218,251,0.3)]",
                     Icon: FaReact,
                   },
                   {
@@ -155,29 +155,29 @@ const Hero = () => {
                   {
                     name: "Python",
                     color: "text-[#3776AB]",
-                    bg: "group-hover:bg-[#3776AB]/10 group-hover:border-[#3776AB]/50 group-hover:shadow-[0_0_20px_rgba(55,118,171,0.3)]",
+                    bg: "group-hover:bg-[#3776AB]/20 group-hover:border-[#3776AB]/50 group-hover:shadow-[0_0_20px_rgba(55,118,171,0.3)]",
                     Icon: FaPython,
                   },
                   {
                     name: "Docker",
                     color: "text-[#2496ED]",
-                    bg: "group-hover:bg-[#2496ED]/10 group-hover:border-[#2496ED]/50 group-hover:shadow-[0_0_20px_rgba(36,150,237,0.3)]",
+                    bg: "group-hover:bg-[#2496ED]/20 group-hover:border-[#2496ED]/50 group-hover:shadow-[0_0_20px_rgba(36,150,237,0.3)]",
                     Icon: FaDocker,
                   },
                   {
                     name: "Node.js",
                     color: "text-[#68A063]",
-                    bg: "group-hover:bg-[#68A063]/10 group-hover:border-[#68A063]/50 group-hover:shadow-[0_0_20px_rgba(104,160,99,0.3)]",
+                    bg: "group-hover:bg-[#68A063]/20 group-hover:border-[#68A063]/50 group-hover:shadow-[0_0_20px_rgba(104,160,99,0.3)]",
                     Icon: FaNodeJs,
                   },
                 ].map((tech, index) => (
                   <motion.div
                     key={tech.name}
                     className="group relative w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white dark:border-gray-800 bg-gray-50 dark:bg-gray-700 flex items-center justify-center transition-all duration-300 hover:z-10 cursor-pointer overflow-hidden"
-                    whileHover={{ scale: 1.15, y: -5 }}
+                    whileHover={{ scale: 1.10 }}
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5 + index * 0.1 }}
+                    transition={{ delay: 0.1 + index * 0.1 }}
                   >
                     <div
                       className={`absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100 ${tech.bg}`}

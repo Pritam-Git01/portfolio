@@ -4,7 +4,7 @@ import { useMemo } from "react";
 
 const About = () => {
   const experienceText = useMemo(() => {
-    const [y, m] = "2.9".split(".").map(Number);
+    const [y, m] = "2.10".split(".").map(Number);
     const nextYear = y + Math.floor((m + 1) / 12);
     const nextMonth = (m + 1) % 12;
     return `${nextYear}.${nextMonth}`;
