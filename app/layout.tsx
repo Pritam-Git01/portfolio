@@ -13,7 +13,7 @@ const inter = Inter({
 
 // Primary metadata - optimized for SEO
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pritamkumaryadav.com'), // Update with your actual domain
+  metadataBase: new URL('https://pritamkumaryadav.vercel.app'), // Update with your actual domain
   
   title: {
     default: "Pritam Kumar Yadav | Full Stack Developer in Bengaluru, India | Software Engineer",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   authors: [
     { 
       name: "Pritam Kumar Yadav",
-      url: "https://pritamkumaryadav.com"
+      url: "https://pritamkumaryadav.vercel.app"
     }
   ],
   
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://pritamkumaryadav.com',
+    url: 'https://pritamkumaryadav.vercel.app',
     siteName: 'Pritam Kumar Yadav Portfolio',
     title: 'Pritam Kumar Yadav | Full Stack Developer in Bengaluru, India',
     description: 'Experienced Full Stack Developer & Software Engineer in Bengaluru. Specializing in React, Node.js, Python. 2.8+ years of experience building scalable applications.',
@@ -127,10 +127,10 @@ export const metadata: Metadata = {
   
   // Alternate languages (if you add multi-language support)
   alternates: {
-    canonical: 'https://pritamkumaryadav.com',
+    canonical: 'https://pritamkumaryadav.vercel.app',
     languages: {
-      'en-IN': 'https://pritamkumaryadav.com',
-      'en-US': 'https://pritamkumaryadav.com',
+      'en-IN': 'https://pritamkumaryadav.vercel.app',
+      'en-US': 'https://pritamkumaryadav.vercel.app',
     },
   },
   

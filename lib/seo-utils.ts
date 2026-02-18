@@ -7,7 +7,7 @@ export const siteConfig = {
   name: 'Pritam Kumar Yadav',
   title: 'Pritam Kumar Yadav | Full Stack Developer in Bengaluru, India',
   description: 'Experienced Full Stack Developer & Software Engineer in Bengaluru, India. Specializing in React, Node.js, Python, TypeScript. 2.8+ years building scalable applications.',
-  url: 'https://pritamkumaryadav.com', // Update with your actual domain
+  url: 'https://pritamkumaryadav.vercel.app', // Update with your actual domain
   image: '/images/og-image.jpg',
   author: 'Pritam Kumar Yadav',
   location: 'Bengaluru, Karnataka, India',

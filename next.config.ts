@@ -103,7 +103,7 @@ const nextConfig: NextConfig = {
   
   /* Environment Variables */
   env: {
-    SITE_URL: process.env.SITE_URL || 'https://pritamkumaryadav.com',
+    SITE_URL: process.env.SITE_URL || 'https://pritamkumaryadav.vercel.app',
     SITE_NAME: 'Pritam Kumar Yadav Portfolio',
   },
   

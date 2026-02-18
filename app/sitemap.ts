@@ -3,7 +3,7 @@ import { projects } from '@/data/projects'
 import { blogs } from '@/data/blogs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://pritamkumaryadav.com' // Update with your actual domain
+  const baseUrl = 'https://pritamkumaryadav.vercel.app' // Update with your actual domain
 
   // Static pages
   const staticPages = [

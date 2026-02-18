@@ -125,7 +125,7 @@ const About = () => {
                   <strong>TypeScript</strong>, and
                   <strong> backend development</strong> with{" "}
                   <strong>Node.js</strong>, <strong>Express.js</strong>,
-                  <strong> Python</strong>, and <strong>FASTApi</strong>. I
+                  <strong> Python</strong>, and <strong>FastAPI</strong>. I
                   specialize in building
                   <strong> performant, scalable, and maintainable</strong> web
                   applications using modern technologies and best practices.

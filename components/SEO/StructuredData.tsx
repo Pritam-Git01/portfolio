@@ -7,13 +7,13 @@ export function StructuredData() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://pritamkumaryadav.com/#person",
+    "@id": "https://pritamkumaryadav.vercel.app/#person",
     "name": "Pritam Kumar Yadav",
     "alternateName": "Pritam Yadav",
-    "url": "https://pritamkumaryadav.com",
+    "url": "https://pritamkumaryadav.vercel.app",
     "image": {
       "@type": "ImageObject",
-      "url": "https://pritamkumaryadav.com/images/profile.jpg",
+      "url": "https://pritamkumaryadav.vercel.app/images/profile.jpg",
       "width": 800,
       "height": 800
     },
@@ -108,11 +108,11 @@ export function StructuredData() {
   const profilePageSchema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": "https://pritamkumaryadav.com/#profilepage",
+    "@id": "https://pritamkumaryadav.vercel.app/#profilepage",
     "mainEntity": {
-      "@id": "https://pritamkumaryadav.com/#person"
+      "@id": "https://pritamkumaryadav.vercel.app/#person"
     },
-    "url": "https://pritamkumaryadav.com",
+    "url": "https://pritamkumaryadav.vercel.app",
     "name": "Pritam Kumar Yadav - Full Stack Developer Portfolio",
     "description": "Professional portfolio showcasing software development projects, technical skills, and experience of Pritam Kumar Yadav, a Full Stack Developer based in Bengaluru, India."
   };
@@ -121,19 +121,19 @@ export function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://pritamkumaryadav.com/#website",
-    "url": "https://pritamkumaryadav.com",
+    "@id": "https://pritamkumaryadav.vercel.app/#website",
+    "url": "https://pritamkumaryadav.vercel.app",
     "name": "Pritam Kumar Yadav Portfolio",
     "description": "Official portfolio of Pritam Kumar Yadav - Full Stack Developer and Software Engineer in Bengaluru, India",
     "publisher": {
-      "@id": "https://pritamkumaryadav.com/#person"
+      "@id": "https://pritamkumaryadav.vercel.app/#person"
     },
     "inLanguage": "en-IN",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://pritamkumaryadav.com/search?q={search_term_string}"
+        "urlTemplate": "https://pritamkumaryadav.vercel.app/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -143,19 +143,19 @@ export function StructuredData() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://pritamkumaryadav.com/#webpage",
-    "url": "https://pritamkumaryadav.com",
+    "@id": "https://pritamkumaryadav.vercel.app/#webpage",
+    "url": "https://pritamkumaryadav.vercel.app",
     "name": "Pritam Kumar Yadav | Full Stack Developer in Bengaluru, India",
     "description": "Experienced Full Stack Developer & Software Engineer in Bengaluru. Specializing in React, Node.js, Python, TypeScript. 2.8+ years building scalable applications.",
     "isPartOf": {
-      "@id": "https://pritamkumaryadav.com/#website"
+      "@id": "https://pritamkumaryadav.vercel.app/#website"
     },
     "about": {
-      "@id": "https://pritamkumaryadav.com/#person"
+      "@id": "https://pritamkumaryadav.vercel.app/#person"
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://pritamkumaryadav.com/images/og-image.jpg"
+      "url": "https://pritamkumaryadav.vercel.app/images/og-image.jpg"
     },
     "datePublished": "2024-01-01",
     "dateModified": new Date().toISOString().split('T')[0],
@@ -166,7 +166,7 @@ export function StructuredData() {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://pritamkumaryadav.com"
+          "item": "https://pritamkumaryadav.vercel.app"
         }
       ]
     }
@@ -181,7 +181,7 @@ export function StructuredData() {
       "name": "Full Stack Development Services",
       "description": "Professional software development services including web application development, API development, cloud deployment, and technical consulting.",
       "provider": {
-        "@id": "https://pritamkumaryadav.com/#person"
+        "@id": "https://pritamkumaryadav.vercel.app/#person"
       },
       "serviceType": [
         "Full Stack Development",
@@ -228,15 +228,15 @@ export function StructuredData() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://pritamkumaryadav.com/#organization",
+    "@id": "https://pritamkumaryadav.vercel.app/#organization",
     "name": "Pritam Kumar Yadav - Software Development",
-    "url": "https://pritamkumaryadav.com",
+    "url": "https://pritamkumaryadav.vercel.app",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://pritamkumaryadav.com/images/logo.png"
+      "url": "https://pritamkumaryadav.vercel.app/images/logo.png"
     },
     "founder": {
-      "@id": "https://pritamkumaryadav.com/#person"
+      "@id": "https://pritamkumaryadav.vercel.app/#person"
     },
     "address": {
       "@type": "PostalAddress",

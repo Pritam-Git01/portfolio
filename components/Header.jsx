@@ -97,7 +97,7 @@ const Header = () => {
             href="/"
             className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-600"
           >
-            Pritam.dev
+            Pritam
           </Link>
         </motion.div>
 
