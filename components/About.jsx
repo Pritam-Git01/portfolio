@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import ProfileCard from "./ProfileCard";
 import { useMemo } from "react";
+import {getExperience} from "../utils/experience.js"
 
 const About = () => {
   const experienceText = useMemo(() => {
-    const [y, m] = "2.10".split(".").map(Number);
-    const nextYear = y + Math.floor((m + 1) / 12);
-    const nextMonth = (m + 1) % 12;
-    return `${nextYear}.${nextMonth}`;
+    getExperience();
   }, []);
 
   return (
