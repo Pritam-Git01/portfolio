@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Pritam Kumar Yadav - Full Stack Developer"
   },
   
-  description: "Pritam Kumar Yadav - Experienced Full Stack Developer & Software Engineer in Bengaluru, India. Specializing in React, Node.js, Python, TypeScript, MongoDB, AWS. 2.8+ years building scalable web applications. Available for hire.",
+  description: "Pritam Kumar Yadav - Experienced Full Stack Developer & Software Engineer in Bengaluru, India. Specializing in React, Node.js, Python, TypeScript, MongoDB, AWS. Building scalable Enterprise AI applications. Available for hire.",
   
   keywords: [
     "Pritam Kumar Yadav",

@@ -7,13 +7,13 @@ export function StructuredData() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://pritamkumaryadav.vercel.app/#person",
+    "@id": "https://pritamyadav.vercel.app/#person",
     "name": "Pritam Kumar Yadav",
     "alternateName": "Pritam Yadav",
-    "url": "https://pritamkumaryadav.vercel.app",
+    "url": "https://pritamyadav.vercel.app",
     "image": {
       "@type": "ImageObject",
-      "url": "https://pritamkumaryadav.vercel.app/images/profile.jpg",
+      "url": "https://pritamyadav.vercel.app/images/profile.jpg",
       "width": 800,
       "height": 800
     },
@@ -51,7 +51,9 @@ export function StructuredData() {
       "RESTful APIs",
       "GraphQL",
       "Machine Learning",
-      "Cloud Computing"
+      "Cloud Computing",
+      "AI Enginnering",
+      "LLMs",
     ],
     "knowsLanguage": [
       {
@@ -86,14 +88,14 @@ export function StructuredData() {
       }
     ],
     "award": [
-      "2.9+ Years of Professional Experience",
+      "3+ Years of Professional Experience",
       "50+ Projects Completed",
-      "10+ Technical Certifications"
+      "5+ Technical Certifications"
     ],
     "sameAs": [
-      "https://github.com/pritam-yadav",
-      "https://linkedin.com/in/pritam-yadav",
-      "https://twitter.com/pritamyadav",
+      "https://github.com/pritam-git01",
+      "https://linkedin.com/in/pritam-dev",
+      "https://twitter.com/pritamdev_io",
       "https://dev.to/pritam-yadav",
       "https://stackoverflow.com/users/pritam-yadav"
     ],
@@ -108,11 +110,11 @@ export function StructuredData() {
   const profilePageSchema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": "https://pritamkumaryadav.vercel.app/#profilepage",
+    "@id": "https://pritamyadav.vercel.app/#profilepage",
     "mainEntity": {
-      "@id": "https://pritamkumaryadav.vercel.app/#person"
+      "@id": "https://pritamyadav.vercel.app/#person"
     },
-    "url": "https://pritamkumaryadav.vercel.app",
+    "url": "https://pritamyadav.vercel.app",
     "name": "Pritam Kumar Yadav - Full Stack Developer Portfolio",
     "description": "Professional portfolio showcasing software development projects, technical skills, and experience of Pritam Kumar Yadav, a Full Stack Developer based in Bengaluru, India."
   };
@@ -121,19 +123,19 @@ export function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://pritamkumaryadav.vercel.app/#website",
-    "url": "https://pritamkumaryadav.vercel.app",
+    "@id": "https://pritamyadav.vercel.app/#website",
+    "url": "https://pritamyadav.vercel.app",
     "name": "Pritam Kumar Yadav Portfolio",
     "description": "Official portfolio of Pritam Kumar Yadav - Full Stack Developer and Software Engineer in Bengaluru, India",
     "publisher": {
-      "@id": "https://pritamkumaryadav.vercel.app/#person"
+      "@id": "https://pritamyadav.vercel.app/#person"
     },
     "inLanguage": "en-IN",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://pritamkumaryadav.vercel.app/search?q={search_term_string}"
+        "urlTemplate": "https://pritamyadav.vercel.app/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -143,19 +145,19 @@ export function StructuredData() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://pritamkumaryadav.vercel.app/#webpage",
-    "url": "https://pritamkumaryadav.vercel.app",
+    "@id": "https://pritamyadav.vercel.app/#webpage",
+    "url": "https://pritamyadav.vercel.app",
     "name": "Pritam Kumar Yadav | Full Stack Developer in Bengaluru, India",
-    "description": "Experienced Full Stack Developer & Software Engineer in Bengaluru. Specializing in React, Node.js, Python, TypeScript. 2.8+ years building scalable applications.",
+    "description": "Experienced Full Stack Developer & Software Engineer in Bengaluru. Specializing in React, Node.js, Python, TypeScript. Building scalable Enterprise AI applications.",
     "isPartOf": {
-      "@id": "https://pritamkumaryadav.vercel.app/#website"
+      "@id": "https://pritamyadav.vercel.app/#website"
     },
     "about": {
-      "@id": "https://pritamkumaryadav.vercel.app/#person"
+      "@id": "https://pritamyadav.vercel.app/#person"
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://pritamkumaryadav.vercel.app/images/og-image.jpg"
+      "url": "https://pritamyadav.vercel.app/images/og-image.jpg"
     },
     "datePublished": "2024-01-01",
     "dateModified": new Date().toISOString().split('T')[0],
@@ -166,7 +168,7 @@ export function StructuredData() {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://pritamkumaryadav.vercel.app"
+          "item": "https://pritamyadav.vercel.app"
         }
       ]
     }
@@ -181,7 +183,7 @@ export function StructuredData() {
       "name": "Full Stack Development Services",
       "description": "Professional software development services including web application development, API development, cloud deployment, and technical consulting.",
       "provider": {
-        "@id": "https://pritamkumaryadav.vercel.app/#person"
+        "@id": "https://pritamyadav.vercel.app/#person"
       },
       "serviceType": [
         "Full Stack Development",
@@ -228,15 +230,15 @@ export function StructuredData() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://pritamkumaryadav.vercel.app/#organization",
+    "@id": "https://pritamyadav.vercel.app/#organization",
     "name": "Pritam Kumar Yadav - Software Development",
-    "url": "https://pritamkumaryadav.vercel.app",
+    "url": "https://pritamyadav.vercel.app",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://pritamkumaryadav.vercel.app/images/logo.png"
+      "url": "https://pritamyadav.vercel.app/images/logo.png"
     },
     "founder": {
-      "@id": "https://pritamkumaryadav.vercel.app/#person"
+      "@id": "https://pritamyadav.vercel.app/#person"
     },
     "address": {
       "@type": "PostalAddress",
@@ -250,9 +252,9 @@ export function StructuredData() {
       "availableLanguage": ["English", "Hindi"]
     },
     "sameAs": [
-      "https://github.com/pritam-yadav",
-      "https://linkedin.com/in/pritam-yadav",
-      "https://twitter.com/pritamyadav"
+      "https://github.com/pritam-git01",
+      "https://linkedin.com/in/pritam-dev",
+      "https://twitter.com/pritamdev_io"
     ]
   };
 

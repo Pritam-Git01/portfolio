@@ -6,12 +6,17 @@ import { SiNextdotjs } from "react-icons/si";
 import ScheduleCall from "./modal/ScheduleCall";
 import TypeWriter from "./TypeWriter";
 import Image from "next/image";
+import {getExperience} from "../utils/experience.js"
 
 const Hero = () => {
   const heroRef = useRef(null);
   const textRef = useRef(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+  const experinceText = useMemo(() => {
+    getExperience();
+ }, []);
+  
   useEffect(() => {
     const tl = gsap.timeline();
 
@@ -200,7 +205,7 @@ const Hero = () => {
               Developer, MERN Stack Developer, Python Developer, TypeScript
               Expert, Web Application Development, Scalable Systems
               Architecture, Cloud Computing, AWS, Docker, Kubernetes, MongoDB,
-              PostgreSQL, Experienced Software Engineer with 2.8+ years in
+              PostgreSQL, Experienced Software Engineer with {experinceText}+ years in
               Bengaluru tech industry
             </div>
           </motion.div>
