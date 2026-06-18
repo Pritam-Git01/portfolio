@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import {getExperience} from "../utils/experience.js"
 
 const About = () => {
-  const experienceText = useMemo(() => {
+  const x = useMemo(() => {
     getExperience();
   }, []);
 
@@ -93,7 +93,7 @@ const About = () => {
                   <strong> Full Stack Developer</strong> based in{" "}
                   <strong>Bengaluru, Karnataka, India</strong>. With a strong
                   foundation in computer science and{" "}
-                  <strong>2.8+ years of professional experience</strong> in
+                  <strong>{experienceText}+ years of professional experience</strong> in
                   software development, I specialize in creating efficient,
                   elegant solutions to complex technical challenges.
                 </p>
@@ -268,7 +268,7 @@ const About = () => {
             <div className="sr-only">
               Pritam Kumar Yadav is an experienced Software Development Engineer
               (SDE) and Full Stack Developer based in Bengaluru, Karnataka,
-              India. With 2.8+ years of professional experience in software
+              India. With {experienceText}+ years of professional experience in software
               engineering, specializing in React, Node.js, Python, TypeScript,
               MongoDB, PostgreSQL, AWS, Docker, and Kubernetes. Available for
               full-time, contract, and freelance software development
