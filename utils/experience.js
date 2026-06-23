@@ -3,4 +3,4 @@ export const getExperience = () => {
     const nextYear = y + Math.floor((m + 1) / 12);
     const nextMonth = (m + 1) % 12;
     return `${nextYear}.${nextMonth}`;
-  });
+  };

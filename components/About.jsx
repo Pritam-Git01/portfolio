@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import {getExperience} from "../utils/experience.js"
 
 const About = () => {
-  const x = useMemo(() => {
+  const experienceText = useMemo(() => {
     getExperience();
   }, []);
 
@@ -253,7 +253,7 @@ const About = () => {
                 aria-label="Technical certifications"
               >
                 <h4 className="text-xl md:text-3xl font-bold text-blue-500">
-                  10+
+                  5+
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400 mt-1">
                   Certifications
