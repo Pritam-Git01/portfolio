@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useRef, useState, useMemo} from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
@@ -14,7 +16,7 @@ const Hero = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const experinceText = useMemo(() => {
-    getExperience();
+   return getExperience();
  }, []);
   
   useEffect(() => {
