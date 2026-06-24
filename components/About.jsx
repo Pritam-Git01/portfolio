@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion";
 import ProfileCard from "./ProfileCard";
 import { useMemo } from "react";
@@ -5,7 +7,7 @@ import {getExperience} from "../utils/experience.js"
 
 const About = () => {
   const experienceText = useMemo(() => {
-    getExperience();
+    return getExperience();
   }, []);
 
   return (
@@ -145,7 +147,7 @@ const About = () => {
                 {/* Education and Certifications */}
                 <p>
                   {/* I hold a <strong>Master's degree in Computer Science</strong> and have earned 
-                  <strong> 10+ professional certifications</strong> in cloud computing, software architecture, and 
+                  <strong> 5+ professional certifications</strong> in cloud computing, software architecture, and 
                   modern web development frameworks. */}
                   Throughout my career, I've been recognized for my
                   problem-solving abilities, attention to detail, and

@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useRef, useState, useMemo} from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
@@ -14,7 +16,7 @@ const Hero = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const experinceText = useMemo(() => {
-    getExperience();
+   return getExperience();
  }, []);
   
   useEffect(() => {
@@ -286,7 +288,7 @@ const Hero = () => {
           </div>
           <div className="text-center">
             <div className="text-2xl sm:text-3xl font-bold text-blue-500">
-              10+
+              5+
             </div>
             <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">
               Certifications
