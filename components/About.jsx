@@ -147,7 +147,7 @@ const About = () => {
                 {/* Education and Certifications */}
                 <p>
                   {/* I hold a <strong>Master's degree in Computer Science</strong> and have earned 
-                  <strong> 10+ professional certifications</strong> in cloud computing, software architecture, and 
+                  <strong> 5+ professional certifications</strong> in cloud computing, software architecture, and 
                   modern web development frameworks. */}
                   Throughout my career, I've been recognized for my
                   problem-solving abilities, attention to detail, and
