@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion";
 import ProfileCard from "./ProfileCard";
 import { useMemo } from "react";
@@ -5,7 +7,7 @@ import {getExperience} from "../utils/experience.js"
 
 const About = () => {
   const experienceText = useMemo(() => {
-    getExperience();
+    return getExperience();
   }, []);
 
   return (
